@@ -1,0 +1,156 @@
+sudo su
+apt update -y
+apt install git -y   git ko install krna
+
+
+git --version
+
+git ki repositiory ko clone karna ha
+
+git clone https://github.com/abhinfrnd/APMTrianing-main.git
+
+ls
+ cd APMTrianing-main
+ls -lrt    for  check the permission of file and folder
+chmod +x * 
+
+ls -lrt  sab green ho jayga means  permission mil gayi
+
+./setup_debian_server.sh  -y      yeah ek shell ha , iske aandar basic saare software ha jab hum is shell ko chalyenge tab sarre software install ho jayenge 
+
+aapne aap saari chize install ho jaygi  upper command se
+
+
+java -version check krne ki liye ki jdk install hua ha ki nhi 
+
+clear   windkow me "cls" command hota ha clear krne ke liye but in linux we use "clear" command
+
+
+note = hamne 1 mahine khadi kr di usme saare required s/w install kr liye 
+
+==============
+
+hamre pass ek aur repositiory ha usko install karenge 
+
+
+https://github.com/abhinfrnd/easytravel
+
+git clone ka use krna ha 
+
+pahle hamne piche anna hoga cd krke 
+
+cd ..
+git clone https://github.com/abhinfrnd/easytravel
+
+ls
+
+cd easytravel
+ls
+ls -lrt
+chmod +x *
+ls -lrt
+
+
+docker --version check the docker version , jab hmne shell ko chlaya tha tab docker bhi install ho gya tha
+cd easytravel
+ls -lrt
+docker-compose up -d  aab is command se easytravel wali application deploy hona suru ho jaygi 
+docker-compose ps
+port 9079 use kr rha ha application
+
+aab hame vm pr aana ha 
+external ip copy karni ha 
+
+
+ i/w ques- dynatrce ka agent kaise daala jata hai
+ 
+==============
+
+copy external_IP:port 
+
+hamari application ko jo run ho rhi ha usko dynatrce me integrate karna hai
+login dynatrce and create account 
+business mail 
+click on deploy dynatrce
+create token and save token in notepad
+installer type x86/64
+monitoring mode full stack
+copy and paste all command in ubuntu machine
+
+==================================================================================================================
+
+login
+
+abhi1@yopmail.com
+123456
+
+click on booknow
+
+visa 4242424242424242
+verification number 123
+click on next
+click on finish 
+booking id generated
+problem me hame saari problem dikhegi 
+
+
+host= ka matlb ek mahine ha , infrastrute ki chize dikhegi  uptime,cpu,memory,network related information 
+
+application > frontend 
+
+ api hamesha distributed traces me dikhti hai 
+ 
+ 
+ jmeter se jo api hit hoti ha woh dynatrace me "distributed traces" me dikhegi , jmeter se jo request hit hogi ham usko ek tag de denge jisse dynatrace ko pta 
+ chalega ki yeah request jmeter se aayi ha , tab dynatrace usi request ko capture kar legga
+ 
+ 
+ http header manager 
+ x-dynatrace-test  LSN=EasyTravel;TSN=Home_1;VU=${user};
+ 
+ LSN means load script name
+ TSN - means Test Script Name
+ 
+ tumhe sab ke request ke header manager me dalna hoga
+ 
+ go to setting 
+ server side service monitoring
+Request Attribute
+
+define a new attribute request 
+
+request attribute name
+add new data source
+
+request attribute source main HTTP Request Header mention krna hoga
+parameter Name main x-dynatrace-test likhna hoga
+option me aana hoga
+select between option
+TSN= and delimeter is ; mention krna hoga
+click on save 
+
+hame lsn nhi likhna load script name to same hi sabhi request ka isliye hame tsn likhna hoga kyuki ye change hota rahta hai 
+
+Request Attribute Source main HTTP Request Header likhna hai 
+
+select capture on server side of a web request
+parameter name x-dynatrace-test hai 
+between - TSN and ;
+click on save
+
+aab jmeter script ko run krna ha  5 user 300 sec
+aapko aab distributed traces me jana ha dyntrace main aapni jmeter wali request ko dekhne ke liye 
+
+services me aayga jmeter ka data 
+
+filter by - Request_attribute: Jmeter_Add
+
+
+
+
+
+
+
+ 
+ 
+  
