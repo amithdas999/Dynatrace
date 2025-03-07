@@ -26,7 +26,7 @@ java -version check krne ki liye ki jdk install hua ha ki nhi
 clear   windkow me "cls" command hota ha clear krne ke liye but in linux we use "clear" command
 
 
-note = hamne 1 mahine khadi kr di usme saare required s/w install kr liye 
+note = hamne 1 linux mahine khadi kr di usme saare required s/w install kr liye aab hame 1 application ko deploy krna hai
 
 ==============
 
@@ -143,12 +143,18 @@ aapko aab distributed traces me jana ha dyntrace main aapni jmeter wali request 
 
 services me aayga jmeter ka data 
 
-filter by - Request_attribute: Jmeter_Add
+filter by - Request_attribute: Jmeter_Add 
 
 
+services > view dynamic request
 
+filter by - Request_attribute: Jmeter_Add 
 
+click on view dynamic request
 
+jmeter_add likha aayga api main jo jmeter se hit hui ha
+
+click on three dot in api request and select 
 
 
  
